@@ -20,16 +20,16 @@
             </h1>
         </header>
         <main>
-            <form class="search-form" onsubmit="return searchGoogle(event)" role="search" aria-label="Search form">
+            <form class="search-form" onsubmit="return handleSearch(event)" role="search" aria-label="Search Dynamic">
                 <input type="text" id="searchBox" class="search-box" placeholder="Search Dynamic or type a URL" aria-label="Search input" required />
                 <div class="buttons">
                     <button type="submit" class="button">Dynamic Search</button>
-                    <button type="button" class="button" onclick="showLuckyMessage()">I'm Feeling Lucky</button>
+                    <button type="button" class="button" onclick="feelingLucky()">I'm Feeling Lucky</button>
                 </div>
             </form>
         </main>
         <footer>
-            <p class="footer-text">© 2024 Dynamic. A Fun Recreation of the Classic Look.</p>
+            <p class="footer-text">© 2024 Dynamic. A Tribute to Simplicity.</p>
         </footer>
     </div>
     <script src="script.js"></script>
