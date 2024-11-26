@@ -1,7 +1,7 @@
 /**
  * Handles the search action when the form is submitted.
  */
-function searchGoogle(event) {
+function handleSearch(event) {
     event.preventDefault() // Prevent page reload
     const query = document.getElementById('searchBox').value.trim()
     if (query) {
@@ -13,15 +13,15 @@ function searchGoogle(event) {
 }
 
 /**
- * Displays a message for the "I'm Feeling Lucky" button.
+ * Displays a random fun message for the "I'm Feeling Lucky" button.
  */
 function feelingLucky() {
     const messages = [
-        "You hit the jackpot!",
-        "Feeling lucky today?",
-        "Surprise! 🎉",
-        "Adventure awaits!",
-        "The answer is closer than you think!"
+        "You’re feeling lucky! 🎉",
+        "Surprise time! 🥳",
+        "Adventure awaits! 🚀",
+        "Let’s see where this takes you! 🌟",
+        "Feeling adventurous? Let’s go!"
     ]
     const randomMessage = messages[Math.floor(Math.random() * messages.length)]
     alert(randomMessage)
