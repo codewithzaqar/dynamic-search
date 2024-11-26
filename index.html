@@ -8,22 +8,29 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">
-            <span class="blue">D</span>
-            <span class="red">y</span>
-            <span class="yellow">n</span>
-            <span class="blue">a</span>
-            <span class="green">m</span>
-            <span class="red">i</span>
-            <span class="yellow">c</span>
-        </div>
-        <form class="search-form" onsubmit="return searchGoogle(event)">
-            <input type="text" id="searchBox" class="search-box" placeholder="Search Dynamic or type a URL"/>
-            <div class="buttons">
-                <button type="submit" class="button">Dynamic Search</button>
-                <button type="button" class="button" onclick="alert('Feeling Lucky!')">I'm Feeling Lucky</button>
-            </div>
-        </form>
+        <header>
+            <h1 class="logo" aria-label="Dynamic">
+                <span class="blue">D</span>
+                <span class="red">y</span>
+                <span class="yellow">n</span>
+                <span class="blue">a</span>
+                <span class="green">m</span>
+                <span class="red">i</span>
+                <span class="yellow">c</span>
+            </h1>
+        </header>
+        <main>
+            <form class="search-form" onsubmit="return searchGoogle(event)" role="search">
+                <input type="text" id="searchBox" class="search-box" placeholder="Search Dynamic or type a URL"/>
+                <div class="buttons">
+                    <button type="submit" class="button">Dynamic Search</button>
+                    <button type="button" class="button" onclick="alert('Feeling Lucky!')">I'm Feeling Lucky</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p class="footer-text">© 2024 Dynamic. Built for fun!</p>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
