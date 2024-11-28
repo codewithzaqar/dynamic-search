@@ -104,6 +104,28 @@ main {
     transform: scale(0.97);
 }
 
+/* Lucky Result Styles */
+#lucky-result {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #34A853;
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* Footer Styles */
 footer {
     margin-top: 40px;
@@ -112,6 +134,15 @@ footer {
 .footer-text {
     font-size: 12px;
     color: #70757a;
+}
+
+.footer-text a {
+    color: #4285F4;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Adjustments */
